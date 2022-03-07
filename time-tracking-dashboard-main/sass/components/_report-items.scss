@@ -1,0 +1,103 @@
+.report {
+    @include flex_centered(column);
+    margin: 25px 0;
+    width: 90%;
+    max-width: 550px;
+    @include responsive($tablet_large) {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 640px;
+        max-width: 100%;
+        height: 425px;
+        margin: 0;
+    }
+    @include responsive($desktop) {
+        height: 495px;
+        width: 825px;
+    }
+    
+    &-item {
+        height: 170px;
+        width: 100%;
+        margin-bottom: 25px;
+        background-image: url("../images/icon-work.svg");
+        background-color: $work_red;
+        background-repeat: no-repeat;
+        background-position: 90% -10px;
+        border-radius: 20px;
+        @include flex_centered(row);
+        align-items: flex-end;
+        @include responsive($tablet_large){
+            flex-basis: 30%;
+            height: 200px;
+            max-width: 250px;
+            margin-right: 25px;
+        }
+        @include responsive($desktop) {
+            height: 235px;
+            flex-basis: 31%;
+        }
+        
+        &-text {
+            width: 100%;
+            height: 130px;
+            background-color: $dark_blue;
+            border-radius: 20px;
+            padding: 20px 10%;
+            @include flex_centered(column);
+            @include responsive($tablet_large){
+                height: 155px;
+                justify-content: space-between;
+                padding: 20px 30px;
+                flex-direction: row;
+            }
+            @include responsive($desktop) {
+                height: 190px;
+            }
+            
+            &-category {
+                width: 100%;
+                @include flex_centered(row);
+                justify-content: space-between;
+                margin-bottom: 5px;
+
+                svg {
+                    cursor: pointer;
+                }
+                p {
+                    font-size: 18px;
+                    color: white;
+                    @include responsive($tablet_large){
+                        font-size: 15px;
+                    }
+                    @include responsive($desktop){
+                        font-size: 18px;
+                    }
+                }
+            }
+            &-hours {
+                width: 100%;
+                @include flex_centered(row);
+                justify-content: space-between;
+                @include responsive($tablet_large){
+                    flex-direction: column;
+                    align-items: flex-start;
+                
+                    h1 {
+                        font-size: 39px;
+                        margin: 10px 0;
+                        @include responsive($desktop){
+                            font-size: 60px;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    &-item:nth-child(3), &-item:nth-child(6){
+        margin-right: 0;
+    }
+}
