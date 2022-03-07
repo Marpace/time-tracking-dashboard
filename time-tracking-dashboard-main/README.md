@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Marpace/time-tracking-dashboard/tree/main/time-tracking-dashboard-main]
 - Live Site URL: [ https://marpace.github.io/time-tracking-dashboard/]
 
 
