@@ -44,6 +44,7 @@
             background-color: $dark_blue;
             border-radius: 20px;
             padding: 20px 10%;
+            cursor: pointer;
             @include flex_centered(column);
             @include responsive($tablet_large){
                 height: 155px;
@@ -96,6 +97,8 @@
                 }
             }
         }
+        &-text:hover {
+            background-color: $desaturated_blue;
     }
     &-item:nth-child(3), &-item:nth-child(6){
         margin-right: 0;
