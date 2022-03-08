@@ -77,5 +77,8 @@
                 @include flex_centered(row);
             }
         }
+        p:hover {
+            color: white !important;
+        }
     }
 }
